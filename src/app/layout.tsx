@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SidebarMenu from "@/components/sidebar-menu";
+import { Database } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,10 +30,45 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex min-h-screen">
+          {/* Sidebar fijo */}
           <div className="sticky top-0 h-screen">
             <SidebarMenu />
           </div>
-          <main className="flex-1 overflow-y-auto">{children}</main>
+
+          {/* Contenedor principal */}
+          <div className="flex flex-col flex-1">
+            {/* Contenido de la página */}
+            <main className="flex-1 overflow-y-auto">{children}</main>
+
+            {/* Footer al final, debajo del contenido */}
+            <footer className="bg-muted/50 border-t py-8 px-8 flex">
+              <div className="max-w-4xl mx-auto">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 bg-blue-600 rounded">
+                      <Database className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground">
+                        Fundamentos de BD
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Guía educativa completa
+                      </p>
+                    </div>
+                  </div>
+                  <div className="text-center md:text-right">
+                    <p className="text-sm text-muted-foreground">
+                      Material educativo para estudiantes y profesionales
+                    </p>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      © 2025 - Conceptos fundamentales de bases de datos
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
         </div>
       </body>
     </html>
