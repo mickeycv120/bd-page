@@ -39,9 +39,9 @@ export default function ModeloRelacionalPage() {
               <div className="bg-muted p-4 rounded-lg">
                 <p className="text-sm">
                   <strong>Edgar F. Codd</strong> revolucionó el mundo de las
-                  bases de datos con su artículo "A Relational Model of Data for
-                  Large Shared Data Banks", estableciendo las bases teóricas que
-                  siguen siendo fundamentales hoy en día.
+                  bases de datos con su artículo &quot;A Relational Model of
+                  Data for Large Shared Data Banks&quot;, estableciendo las
+                  bases teóricas que siguen siendo fundamentales hoy en día.
                 </p>
               </div>
             </CardContent>

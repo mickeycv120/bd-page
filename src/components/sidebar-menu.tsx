@@ -72,6 +72,7 @@ export default function SidebarMenu() {
                 Nacional de México
               </motion.span>
             </div>
+            <hr className="my-4 border-t border-white/30" />
 
             <div className="mt-8 flex flex-col gap-2">
               {links.map((link, idx) => (
