@@ -97,8 +97,7 @@ export default function HomePage() {
               Explora los Conceptos
             </h2>
             <p className="text-muted-foreground">
-              Selecciona cualquier tema del menú lateral o haz clic en las
-              tarjetas para comenzar tu aprendizaje.
+              Haz clic en cualquier tarjeta para comenzar tu aprendizaje.
             </p>
           </div>
 
