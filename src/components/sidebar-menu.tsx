@@ -4,7 +4,7 @@ import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
 import { IconArrowLeft, IconSettings, IconUserBolt } from "@tabler/icons-react";
 import { useState } from "react";
 import { motion } from "motion/react";
-import { Home } from "lucide-react";
+import { Home, School } from "lucide-react";
 
 export default function SidebarMenu() {
   const links = [
@@ -23,17 +23,10 @@ export default function SidebarMenu() {
       ),
     },
     {
-      label: "Settings",
-      href: "#",
+      label: "ITQ",
+      href: "https://queretaro.tecnm.mx/",
       icon: (
-        <IconSettings className="h-5 w-5 shrink-0 text-white dark:text-neutral-200" />
-      ),
-    },
-    {
-      label: "Logout",
-      href: "#",
-      icon: (
-        <IconArrowLeft className="h-5 w-5 shrink-0 text-white dark:text-neutral-200" />
+        <School className="h-5 w-5 shrink-0 text-white dark:text-neutral-200" />
       ),
     },
   ];
@@ -80,7 +73,7 @@ export default function SidebarMenu() {
             <SidebarLink
               link={{
                 label: "Itq students",
-                href: "#",
+                href: "https://sii.itq.edu.mx/sistema/",
                 icon: (
                   <Image
                     src="https://queretaro.tecnm.mx/wp-content/uploads/2021/09/LOGOS-INSTITUCIONALES-ITQ-07-1024x1024.png"
