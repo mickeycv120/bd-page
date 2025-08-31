@@ -58,7 +58,9 @@ export default function AboutPage() {
               <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-teal-500 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg">
                 <span className="text-white text-2xl font-bold">B</span>
               </div>
-              <CardTitle className="text-xl">Estudiante 2</CardTitle>
+              <CardTitle className="text-xl">
+                Edouard Alighieri Nuñez Razón
+              </CardTitle>
               <CardDescription className="text-base">
                 Estudiante de Ingeniería en Sistemas
               </CardDescription>
@@ -80,7 +82,9 @@ export default function AboutPage() {
               <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg">
                 <span className="text-white text-2xl font-bold">C</span>
               </div>
-              <CardTitle className="text-xl">Estudiante 3</CardTitle>
+              <CardTitle className="text-xl">
+                Daniela Gutierrez Barrera
+              </CardTitle>
               <CardDescription className="text-base">
                 Estudiante de Ingeniería en Sistemas
               </CardDescription>
@@ -124,21 +128,21 @@ export default function AboutPage() {
         </div>
 
         {/* Project Info */}
-        <div className="bg-white border-l-4 border-purple-500 pl-8 py-6">
+        <div className="bg-white border-l-4 border-orange-500 pl-8 py-6">
           <h3 className="text-2xl font-bold text-gray-900 mb-6">
             Sobre el Proyecto
           </h3>
           <div className="space-y-4">
             <div className="flex items-center gap-4 text-gray-700">
-              <MapPin className="w-5 h-5 text-purple-600" />
+              <MapPin className="w-5 h-5 text-orange-600" />
               <span className="text-lg">Universidad - México</span>
             </div>
             <div className="flex items-center gap-4 text-gray-700">
-              <Calendar className="w-5 h-5 text-purple-600" />
+              <Calendar className="w-5 h-5 text-orange-600" />
               <span className="text-lg">Proyecto Académico 2024</span>
             </div>
             <div className="flex items-center gap-4 text-gray-700">
-              <GraduationCap className="w-5 h-5 text-purple-600" />
+              <GraduationCap className="w-5 h-5 text-orange-600" />
               <span className="text-lg">Materia: Bases de Datos</span>
             </div>
           </div>
