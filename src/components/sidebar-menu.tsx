@@ -1,27 +1,23 @@
 "use client";
 import Image from "next/image";
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
-import {
-  IconArrowLeft,
-  IconBrandTabler,
-  IconSettings,
-  IconUserBolt,
-} from "@tabler/icons-react";
+import { IconArrowLeft, IconSettings, IconUserBolt } from "@tabler/icons-react";
 import { useState } from "react";
 import { motion } from "motion/react";
+import { Home } from "lucide-react";
 
 export default function SidebarMenu() {
   const links = [
     {
-      label: "Dashboard",
-      href: "#",
+      label: "Home",
+      href: "/",
       icon: (
-        <IconBrandTabler className="h-5 w-5 shrink-0 text-white dark:text-neutral-200" />
+        <Home className="h-5 w-5 shrink-0 text-white dark:text-neutral-200" />
       ),
     },
     {
       label: "Profile",
-      href: "#",
+      href: "/about",
       icon: (
         <IconUserBolt className="h-5 w-5 shrink-0 text-white dark:text-neutral-200" />
       ),
@@ -83,11 +79,11 @@ export default function SidebarMenu() {
           <div>
             <SidebarLink
               link={{
-                label: "Manu Arora",
+                label: "Itq students",
                 href: "#",
                 icon: (
                   <Image
-                    src="https://assets.aceternity.com/manu.png"
+                    src="https://queretaro.tecnm.mx/wp-content/uploads/2021/09/LOGOS-INSTITUCIONALES-ITQ-07-1024x1024.png"
                     className="h-7 w-7 shrink-0 rounded-full"
                     width={50}
                     height={50}
