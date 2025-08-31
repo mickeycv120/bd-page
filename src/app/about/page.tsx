@@ -135,21 +135,25 @@ export default function AboutPage() {
           <div className="space-y-4">
             <div className="flex items-center gap-4 text-gray-700">
               <MapPin className="w-5 h-5 text-orange-600" />
-              <span className="text-lg">Universidad - México</span>
+              <span className="text-lg">
+                Instituto Tecnológico de Querétaro - México
+              </span>
             </div>
             <div className="flex items-center gap-4 text-gray-700">
               <Calendar className="w-5 h-5 text-orange-600" />
-              <span className="text-lg">Proyecto Académico 2024</span>
+              <span className="text-lg">Proyecto Académico 2025</span>
             </div>
             <div className="flex items-center gap-4 text-gray-700">
               <GraduationCap className="w-5 h-5 text-orange-600" />
-              <span className="text-lg">Materia: Bases de Datos</span>
+              <span className="text-lg">
+                Materia: Fundamentos de Bases de Datos
+              </span>
             </div>
           </div>
         </div>
 
         {/* Mission Section */}
-        <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-8">
+        <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-8 mb-5">
           <h3 className="text-2xl font-bold text-gray-900 mb-6">
             Nuestra Misión
           </h3>
