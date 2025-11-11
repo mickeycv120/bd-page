@@ -21,7 +21,7 @@ export default function AboutPage() {
             Equipo de Desarrollo
           </h2>
           <p className="text-lg mt-4 text-gray-600 max-w-2xl mx-auto">
-            Tres estudiantes apasionados por las bases de datos y la educación
+            Cuatro estudiantes apasionados por las bases de datos y la educación
             tecnológica, trabajando juntos para crear recursos educativos de
             calidad.
           </p>
