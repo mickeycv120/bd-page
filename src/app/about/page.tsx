@@ -100,6 +100,26 @@ export default function AboutPage() {
               </div>
             </CardContent>
           </Card>
+
+          <Card className="border-2 border-gray-100 shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300">
+            <CardHeader className="text-center pb-4">
+              <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg">
+                <span className="text-white text-2xl font-bold">D</span>
+              </div>
+              <CardTitle className="text-xl">
+                Daniel Eduardo Sanchez Montes
+              </CardTitle>
+              <CardDescription className="text-base">
+                Estudiante de Ingeniería en Sistemas
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4 px-6 pb-6">
+              <div className="flex items-center gap-3 text-sm">
+                <GraduationCap className="w-5 h-5 text-cyan-600" />
+                <span>Ingeniería en Sistemas</span>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Team Skills Section */}
