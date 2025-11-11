@@ -62,13 +62,7 @@ const topics = [
     icon: BookOpen,
     href: "/algebra-relacional",
     color: "text-teal-600",
-    badges: [
-      "Unión",
-      "Intersección",
-      "Diferencia",
-      "Selección",
-      "Proyección",
-    ],
+    badges: ["Unión", "Intersección", "Diferencia", "Selección", "Proyección"],
   },
 ];
 
@@ -127,24 +121,26 @@ export default function HomePage() {
                         <CardTitle className="text-lg">{topic.title}</CardTitle>
                       </div>
                     </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground text-sm mb-4">
-                      {topic.description}
-                    </p>
-                    {Array.isArray((topic as any).badges) && (topic as any).badges.length > 0 && (
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {(topic as any).badges.map((item: string) => (
-                          <Badge key={item} variant="outline">
-                            {item}
-                          </Badge>
-                        ))}
+                    <CardContent>
+                      <p className="text-muted-foreground text-sm mb-4">
+                        {topic.description}
+                      </p>
+                      {Array.isArray(topic.badges) &&
+                        topic.badges &&
+                        topic.badges.length > 0 && (
+                          <div className="flex flex-wrap gap-2 mb-4">
+                            {topic.badges.map((item: string) => (
+                              <Badge key={item} variant="outline">
+                                {item}
+                              </Badge>
+                            ))}
+                          </div>
+                        )}
+                      <div className="flex items-center text-sm text-blue-600 group-hover:text-blue-700">
+                        Aprender más
+                        <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                       </div>
-                    )}
-                    <div className="flex items-center text-sm text-blue-600 group-hover:text-blue-700">
-                      Aprender más
-                      <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </CardContent>
+                    </CardContent>
                   </Card>
                 </Link>
               );

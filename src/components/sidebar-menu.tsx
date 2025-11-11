@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
-import { IconArrowLeft, IconSettings, IconUserBolt } from "@tabler/icons-react";
+import { IconUserBolt } from "@tabler/icons-react";
 import { useState } from "react";
 import { motion } from "motion/react";
 import { Home, School } from "lucide-react";
