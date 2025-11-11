@@ -16,7 +16,7 @@ export default function SidebarMenu() {
       ),
     },
     {
-      label: "Profile",
+      label: "Team",
       href: "/about",
       icon: (
         <IconUserBolt className="h-5 w-5 shrink-0 text-white dark:text-neutral-200" />
